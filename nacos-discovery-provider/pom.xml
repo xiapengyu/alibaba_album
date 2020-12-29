@@ -8,11 +8,11 @@
         <version>2.2.5.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.discovery.consumer</groupId>
-    <artifactId>nacos-discovery-consumer</artifactId>
+    <groupId>com.nacos.discovery</groupId>
+    <artifactId>nacos-discovery-provider</artifactId>
     <version>0.0.1</version>
-    <name>nacos-discovery-consumer</name>
-    <description>nacos-discovery-consumer</description>
+    <name>nacos-discovery-provider</name>
+    <description>nacos discovery provider</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -45,20 +45,9 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <!--开启nacos discovery的功能-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-            <version>${spring.nacos.version}</version>
-        </dependency>
-        <!--开启nacos config的功能-->
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
